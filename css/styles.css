@@ -1,30 +1,29 @@
-/* Стили для index.html */
+/* Styles for index.html */
 
-/*  цвет основного текста #212121
-второй цыет текста #757575
-белый цвет текста #FFFFFF
-синий цвет в лого и при ховере (акцент) #2196F3
-
-/* background main #FFFFFF */
-/* backround seconday #F5F4FA */
 :root {
     --primary-text-color:#757575;
+    --background-secondary-color: #F5F4FA;
     --title-text-color:#212121;
     --accent:#2196F3;
-    --white:#FFFFFF;
+    --primary-white: #ffffff
 
 }
 
+
 body {
-    background-color: var(--white);
+    background-color: var(--primary-white);
     color: var(--primary-text-color);
 
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03;
 }
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 /* Logo */
 
@@ -48,11 +47,7 @@ ul {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.02em;
-}
-.site-nav .link:hover, 
-.site-nav .link:focus {
-    color: var(--accent);
+letter-spacing: 0.02;
 }
 
 .site-nav .link.current {
@@ -67,25 +62,24 @@ letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-.contacts-list .link:hover, 
-.contacts-list .link:focus {
-    color: var(--accent);
+    letter-spacing: 0.02;
 }
 
-/* main */
+.link:hover,.link:focus {
+    color: var(--accent)
+}
+/* Main */
 
 /* Hero */
 
 .hero-title {
-    color: var(--white);
+    color: var(--primary-white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06;
     text-align: center;
-    
+    background-color: #757575;
 }
 
 /* Sections */
@@ -97,6 +91,10 @@ letter-spacing: 0.02em;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+}
+
+.hidden-title {
+    display: none;
 }
 
 /* Feature list */
@@ -119,13 +117,14 @@ letter-spacing: 0.02em;
 /*  Service list */
 
 .service-list .title {
-    color: var(--white);
+    color: var(--primary-white);
     
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Team list */
@@ -149,19 +148,26 @@ letter-spacing: 0.02em;
 
 /* address */
 .address {
-    color: var(--white);
+    color: var(--primary-white);
 }
 .address .link {
     text-decoration: none;
     color: var(--primary-text-color);
 }
 
-.social-media .title {
-    color: var(--white);
+.address .link:hover, .address .link:focus {
+    color: var(--accent);
+}
+
+footer .title {
+
+    color: var(--primary-white);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    background-color: #757575;
 
 }
 
@@ -182,16 +188,19 @@ letter-spacing: 0.02em;
 /* Button */
 
 .button {
-    color: var(--white);
+    color: var(--primary-white);
     background-color: var(--accent);
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06;
 }
 
-/* Стили для портфолио */
+
+
+
+/* Styles for portfolio.html */
 
 .button-port {
     color: var(--title-text-color);
@@ -200,7 +209,7 @@ letter-spacing: 0.02em;
 
 .button-port:hover, 
 .button-port:focus {
-    color: var(--white);
+    color: var(--primary-white);
     background-color: var(--accent);
 }
 
@@ -215,7 +224,7 @@ letter-spacing: 0.02em;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06;
 }
 
 .works-list .text {
@@ -225,7 +234,7 @@ letter-spacing: 0.02em;
 }
 
 .works-list .description {
-    color: var(--white);
+    color: var(--primary-white);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
