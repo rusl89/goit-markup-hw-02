@@ -146,17 +146,49 @@ letter-spacing: 0.02;
 
 /* Footer */
 
+.main-footer {
+    background-color: #2F303A;
+}
+
+.style-footer {
+    padding-top: 48px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.address-footer .link {
+    display: block;
+}
+
+
+/* Logo */
+
+.address-footer .logo {
+    color: var(--primary-white);
+}
+
 /* address */
 .address {
     color: var(--primary-white);
+    margin-top: 8px;
+    font-style: normal;
+    line-height: 1.46;
 }
-.address .link {
+.address-footer .link {
     text-decoration: none;
     color: var(--primary-text-color);
+    
 }
 
 .address .link:hover, .address .link:focus {
     color: var(--accent);
+}
+
+footer .logo {
+    margin-bottom: 10px;
 }
 
 footer .title {
@@ -166,8 +198,6 @@ footer .title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-
-    background-color: #757575;
 
 }
 
@@ -183,6 +213,12 @@ footer .title {
     font-size: 12px;
     line-height: 2;
     text-align: center;
+
+    padding-top: 18px;
+    padding-bottom: 21px;
+
+    border-top: 1px solid
+    rgba(255, 255, 255, 0.1);
 }
 
 /* Button */
@@ -235,6 +271,7 @@ footer .title {
 
 .works-list .description {
     color: var(--primary-white);
+    background-color: var(--accent);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
